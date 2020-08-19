@@ -14,6 +14,7 @@ spec:
     matchLabels:
       app: {{ template "helm-guestbook.name" . }}
       release: {{ .Release.Name }}
+      test: true
   template:
     metadata:
       labels:
